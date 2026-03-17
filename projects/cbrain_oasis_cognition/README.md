@@ -35,4 +35,6 @@ A clean, reproducible workflow on structured cohort data is directly aligned wit
 - Dataset access routes assessed (official and practical).
 - Initial feature and leakage plan created in `docs/feature_leakage_plan.md`.
 - Data access assessment captured in `docs/data_access_assessment.md`.
-
+- Reproducible inspection notebook added: `notebooks/01_data_audit.ipynb`.
+- Executed inspection evidence captured in `docs/data_inspection_report.md`.
+- Executed leakage checks captured in `docs/leakage_audit.md`.

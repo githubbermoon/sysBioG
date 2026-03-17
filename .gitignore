@@ -15,3 +15,5 @@ env/
 *.log
 *.tmp
 
+# macOS
+.DS_Store
