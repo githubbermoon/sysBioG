@@ -1,0 +1,62 @@
+{
+  "best_threshold_by_balanced_accuracy": {
+    "accuracy": 0.7878787878787878,
+    "balanced_accuracy": 0.7593984962406015,
+    "f1": 0.6956521739130435,
+    "fn": 6,
+    "fp": 1,
+    "precision": 0.8888888888888888,
+    "recall": 0.5714285714285714,
+    "specificity": 0.9473684210526315,
+    "threshold": 0.55,
+    "tn": 18,
+    "tp": 8,
+    "youden_j": 0.518796992481203
+  },
+  "best_threshold_by_f1": {
+    "accuracy": 0.7878787878787878,
+    "balanced_accuracy": 0.7593984962406015,
+    "f1": 0.6956521739130435,
+    "fn": 6,
+    "fp": 1,
+    "precision": 0.8888888888888888,
+    "recall": 0.5714285714285714,
+    "specificity": 0.9473684210526315,
+    "threshold": 0.55,
+    "tn": 18,
+    "tp": 8,
+    "youden_j": 0.518796992481203
+  },
+  "best_threshold_by_youden_j": {
+    "accuracy": 0.7878787878787878,
+    "balanced_accuracy": 0.7593984962406015,
+    "f1": 0.6956521739130435,
+    "fn": 6,
+    "fp": 1,
+    "precision": 0.8888888888888888,
+    "recall": 0.5714285714285714,
+    "specificity": 0.9473684210526315,
+    "threshold": 0.55,
+    "tn": 18,
+    "tp": 8,
+    "youden_j": 0.518796992481203
+  },
+  "date": "2026-03-17",
+  "model_name": "baseline_logistic_sklearn",
+  "note": "Threshold selection on validation is exploratory; do not lock clinical threshold without external holdout.",
+  "threshold_at_0_50": {
+    "accuracy": 0.696969696969697,
+    "balanced_accuracy": 0.6804511278195489,
+    "f1": 0.6153846153846154,
+    "fn": 6,
+    "fp": 4,
+    "precision": 0.6666666666666666,
+    "recall": 0.5714285714285714,
+    "specificity": 0.7894736842105263,
+    "threshold": 0.5,
+    "tn": 15,
+    "tp": 8,
+    "youden_j": 0.3609022556390977
+  },
+  "validation_row_count": 33
+}

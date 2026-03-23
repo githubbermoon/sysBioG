@@ -1,0 +1,29 @@
+{
+  "baseline_row_count": 150,
+  "label_negative_count": 85,
+  "label_positive_count": 65,
+  "label_positive_rate": 0.43333333333333335,
+  "missing_counts_retained_predictors": {
+    "ASF": 0,
+    "Age": 0,
+    "EDUC": 0,
+    "Gender": 0,
+    "SES": 8,
+    "eTIV": 0,
+    "nWBV": 0
+  },
+  "raw_row_count": 373,
+  "raw_subject_count": 150,
+  "train_class_balance": {
+    "negative_count": 66,
+    "positive_count": 51,
+    "positive_rate": 0.4358974358974359,
+    "row_count": 117
+  },
+  "validation_class_balance": {
+    "negative_count": 19,
+    "positive_count": 14,
+    "positive_rate": 0.42424242424242425,
+    "row_count": 33
+  }
+}

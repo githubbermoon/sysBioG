@@ -1,0 +1,9 @@
+feature,coefficient,predictor,abs_coefficient,logistic_rank,direction,importance,rf_rank,biological_context_note
+SES_missing,1.2846767541193531,SES_missing_indicator,1.2846767541193531,1,positive_association,0.0462583797427554,8,Missingness itself may encode collection bias; treat as data-quality signal.
+Gender_code,1.0210954851058467,Gender,1.0210954851058467,2,positive_association,0.0666573114091951,6,Sex/gender differences may reflect both biology and cohort sampling artifacts.
+EDUC_z,-0.7238173823664933,EDUC,0.7238173823664933,3,negative_association,0.150120937117659,5,"Education can represent cognitive reserve and social determinants, not direct pathology."
+nWBV_z,-0.7137679351397542,nWBV,0.7137679351397542,4,negative_association,0.1958809135994179,1,nWBV is a global atrophy proxy and biologically plausible in cognitive decline patterns.
+Age_z,-0.4280206991163361,Age,0.4280206991163361,5,negative_association,0.1666271994019439,2,Age captures broad neurodegenerative risk trends but can proxy survival and selection effects.
+eTIV_z,-0.2383045982233231,eTIV,0.2383045982233231,6,negative_association,0.1585369715773378,3,eTIV is structural context and not a direct disease marker in isolation.
+SES_imputed_z,-0.2236654956227779,SES,0.2236654956227779,7,negative_association,0.0606224930506404,7,SES links to access and life-course exposure; interpretation is confounded by social factors.
+ASF_z,0.1756532316737438,ASF,0.1756532316737438,8,positive_association,0.1552957941010501,4,ASF is structural scaling and should be interpreted cautiously due to collinearity.

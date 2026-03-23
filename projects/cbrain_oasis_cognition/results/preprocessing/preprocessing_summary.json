@@ -1,0 +1,49 @@
+{
+  "final_feature_order": [
+    "Age_z",
+    "Gender_code",
+    "EDUC_z",
+    "SES_imputed_z",
+    "SES_missing",
+    "eTIV_z",
+    "nWBV_z",
+    "ASF_z"
+  ],
+  "missing_counts_transformed_X_train": {
+    "ASF_z": 0,
+    "Age_z": 0,
+    "EDUC_z": 0,
+    "Gender_code": 0,
+    "SES_imputed_z": 0,
+    "SES_missing": 0,
+    "eTIV_z": 0,
+    "nWBV_z": 0
+  },
+  "missing_counts_transformed_X_validation": {
+    "ASF_z": 0,
+    "Age_z": 0,
+    "EDUC_z": 0,
+    "Gender_code": 0,
+    "SES_imputed_z": 0,
+    "SES_missing": 0,
+    "eTIV_z": 0,
+    "nWBV_z": 0
+  },
+  "overlap_count": 0,
+  "train_label_distribution": {
+    "negative_count": 66,
+    "positive_count": 51,
+    "positive_rate": 0.4358974358974359,
+    "row_count": 117
+  },
+  "train_row_count": 117,
+  "train_subject_count": 117,
+  "validation_label_distribution": {
+    "negative_count": 19,
+    "positive_count": 14,
+    "positive_rate": 0.42424242424242425,
+    "row_count": 33
+  },
+  "validation_row_count": 33,
+  "validation_subject_count": 33
+}

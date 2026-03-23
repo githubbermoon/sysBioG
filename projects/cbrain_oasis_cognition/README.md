@@ -28,7 +28,7 @@ Target definition:
   - deterministic: `sha256(subject_id) % 10` (`<8` train, else validation)
   - no subject overlap allowed
 
-## Pipeline Status (Complete up to Step 3D)
+## Pipeline Status (Complete up to Step 5)
 
 1. **Step 1: data audit + leakage audit**
    - Notebook: `notebooks/01_data_audit.ipynb`
@@ -63,6 +63,16 @@ Target definition:
    - Notebook: `notebooks/07_error_analysis_step3d.ipynb`
    - Outputs: `results/modeling/step3d_*`
    - Doc: `docs/error_analysis_step3d.md`
+
+8. **Step 4: interpretation and scientific framing**
+   - Notebook: `notebooks/08_interpretation_step4.ipynb`
+   - Outputs: `results/modeling/step4_*`
+   - Doc: `docs/interpretation_step4.md`
+
+9. **Step 5: final write-up and transfer packaging**
+   - Notebook: `notebooks/09_writeup_packaging_step5.ipynb`
+   - Outputs: `results/modeling/step5_*`
+   - Docs: `docs/step5_delivery_summary.md`, `docs/project_brief.md`, `docs/application_mapping.md`
 
 ## Main Results (Validation)
 
@@ -103,6 +113,16 @@ Guardrail:
 - Error concentration is highest near boundary probability bands (`[0.4,0.6)`).
 - Descriptive subgroup signal observed (e.g., by age/gender), but no causal interpretation claimed.
 
+### Step 4 highlights
+
+- Cross-model interpretation table frozen (`results/modeling/step4_feature_interpretation.csv`).
+- Biological framing added with explicit non-causal guardrails (`docs/interpretation_step4.md`).
+
+### Step 5 highlights
+
+- Final project snapshot consolidated into `results/modeling/step5_project_snapshot.json`.
+- Delivery summary and transfer docs finalized for review/application reuse.
+
 ## Scientific Limitations
 
 - Small validation sample (`n=33`) implies high uncertainty in subgroup and threshold conclusions.
@@ -119,7 +139,7 @@ Set up environment:
 cd /Users/pranjal/Projects/sysBio/projects/cbrain_oasis_cognition
 python3 -m venv .venv
 .venv/bin/python -m pip install --upgrade pip
-.venv/bin/python -m pip install scikit-learn
+.venv/bin/python -m pip install scikit-learn pandas tabulate
 ```
 
 Execute notebooks in order (recommended):
@@ -136,14 +156,16 @@ for c in json.loads(nb.read_text())['cells']:
         exec(compile(''.join(c['source']), nb.name, 'exec'), ns, ns)
 PY
 
-# Step 2A-3D
+# Step 2A-5
 for nb in \
   notebooks/02_cohort_construction.ipynb \
   notebooks/03_preprocessing_freeze.ipynb \
   notebooks/04_model_baseline_step3a.ipynb \
   notebooks/05_model_comparison_step3b.ipynb \
   notebooks/06_threshold_calibration_step3c.ipynb \
-  notebooks/07_error_analysis_step3d.ipynb; do
+  notebooks/07_error_analysis_step3d.ipynb \
+  notebooks/08_interpretation_step4.ipynb \
+  notebooks/09_writeup_packaging_step5.ipynb; do
   .venv/bin/python - <<PY
 import json
 from pathlib import Path

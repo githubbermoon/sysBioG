@@ -1,0 +1,25 @@
+{
+  "fit_protocol": "All preprocessing and split are frozen from Steps 2A/2B; no validation leakage in fitting.",
+  "hyperparameters": {
+    "C": 1.0,
+    "classes": [
+      0,
+      1
+    ],
+    "max_iter": 2000,
+    "n_iter": [
+      4
+    ],
+    "random_state": 42,
+    "solver": "liblinear"
+  },
+  "model_family": "Logistic regression (scikit-learn)",
+  "notes": [
+    "Deterministic run with fixed random_state=42 and liblinear solver.",
+    "Threshold is fixed at 0.5 for confusion metrics.",
+    "No temporal or identifier features are used."
+  ],
+  "objective": "Binary prediction of cognitive_impairment on frozen baseline cohort",
+  "training_data": "results/preprocessing/X_train.csv + y_train.csv",
+  "validation_data": "results/preprocessing/X_validation.csv + y_validation.csv"
+}

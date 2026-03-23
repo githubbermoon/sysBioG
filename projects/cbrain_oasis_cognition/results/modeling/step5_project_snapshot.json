@@ -1,0 +1,278 @@
+{
+  "project": "cbrain_oasis_cognition",
+  "snapshot_date": "2026-03-23",
+  "pipeline_status": "complete_through_step5",
+  "cohort": {
+    "raw_row_count": 373,
+    "baseline_row_count": 150,
+    "raw_subject_count": 150,
+    "label_positive_rate": 0.43333333333333335,
+    "train_subject_count": 117,
+    "validation_subject_count": 33,
+    "split_overlap_count": 0
+  },
+  "preprocessing": {
+    "final_feature_order": [
+      "Age_z",
+      "Gender_code",
+      "EDUC_z",
+      "SES_imputed_z",
+      "SES_missing",
+      "eTIV_z",
+      "nWBV_z",
+      "ASF_z"
+    ],
+    "train_missing_counts": {
+      "ASF_z": 0,
+      "Age_z": 0,
+      "EDUC_z": 0,
+      "Gender_code": 0,
+      "SES_imputed_z": 0,
+      "SES_missing": 0,
+      "eTIV_z": 0,
+      "nWBV_z": 0
+    },
+    "validation_missing_counts": {
+      "ASF_z": 0,
+      "Age_z": 0,
+      "EDUC_z": 0,
+      "Gender_code": 0,
+      "SES_imputed_z": 0,
+      "SES_missing": 0,
+      "eTIV_z": 0,
+      "nWBV_z": 0
+    }
+  },
+  "models": {
+    "baseline_logistic_validation": {
+      "accuracy": 0.696969696969697,
+      "confusion_matrix": {
+        "fn": 6,
+        "fp": 4,
+        "tn": 15,
+        "tp": 8
+      },
+      "f1": 0.6153846153846154,
+      "pr_auc": 0.7983120542903152,
+      "precision": 0.6666666666666666,
+      "recall": 0.5714285714285714,
+      "roc_auc": 0.7781954887218046,
+      "specificity": 0.7894736842105263,
+      "threshold": 0.5
+    },
+    "random_forest_validation": {
+      "accuracy": 0.696969696969697,
+      "confusion_matrix": {
+        "fn": 5,
+        "fp": 5,
+        "tn": 14,
+        "tp": 9
+      },
+      "f1": 0.6428571428571429,
+      "pr_auc": 0.6584935149784774,
+      "precision": 0.6428571428571429,
+      "recall": 0.6428571428571429,
+      "roc_auc": 0.736842105263158,
+      "specificity": 0.7368421052631579,
+      "threshold": 0.5
+    },
+    "comparison": {
+      "roc_auc_delta_rf_minus_logistic": -0.041353383458646586,
+      "pr_auc_delta_rf_minus_logistic": -0.13981853931183774,
+      "f1_delta_rf_minus_logistic": 0.027472527472527486
+    }
+  },
+  "threshold_and_calibration": {
+    "train_reference": {
+      "brier_score": 0.17720472279501148,
+      "ece_10_bins": 0.10590984913900658,
+      "log_loss": 0.5309446045440668,
+      "mce_10_bins": 0.35578125822053275
+    },
+    "validation": {
+      "brier_score": 0.18063956238352116,
+      "ece_10_bins": 0.16016837004515336,
+      "log_loss": 0.5366351275146446,
+      "mce_10_bins": 0.2946252259522817
+    }
+  },
+  "error_analysis": {
+    "date": "2026-03-18",
+    "error_type_counts": {
+      "FN": 6,
+      "FP": 4,
+      "TN": 15,
+      "TP": 8
+    },
+    "group_summaries": {
+      "age_bin": [
+        {
+          "error_count": 1,
+          "error_rate": 0.1111111111111111,
+          "fn": 1,
+          "fp": 0,
+          "group": "<70",
+          "n": 9,
+          "positive_rate": 0.4444444444444444,
+          "predicted_positive_rate": 0.3333333333333333,
+          "tn": 5,
+          "tp": 3
+        },
+        {
+          "error_count": 7,
+          "error_rate": 0.4375,
+          "fn": 4,
+          "fp": 3,
+          "group": "70-79",
+          "n": 16,
+          "positive_rate": 0.5,
+          "predicted_positive_rate": 0.4375,
+          "tn": 5,
+          "tp": 4
+        },
+        {
+          "error_count": 2,
+          "error_rate": 0.25,
+          "fn": 1,
+          "fp": 1,
+          "group": "80+",
+          "n": 8,
+          "positive_rate": 0.25,
+          "predicted_positive_rate": 0.25,
+          "tn": 5,
+          "tp": 1
+        }
+      ],
+      "gender": [
+        {
+          "error_count": 4,
+          "error_rate": 0.2222222222222222,
+          "fn": 2,
+          "fp": 2,
+          "group": "F",
+          "n": 18,
+          "positive_rate": 0.2777777777777778,
+          "predicted_positive_rate": 0.2777777777777778,
+          "tn": 11,
+          "tp": 3
+        },
+        {
+          "error_count": 6,
+          "error_rate": 0.4,
+          "fn": 4,
+          "fp": 2,
+          "group": "M",
+          "n": 15,
+          "positive_rate": 0.6,
+          "predicted_positive_rate": 0.4666666666666667,
+          "tn": 4,
+          "tp": 5
+        }
+      ],
+      "probability_band": [
+        {
+          "error_count": 0,
+          "error_rate": 0.0,
+          "fn": 0,
+          "fp": 0,
+          "group": "[0.0,0.2)",
+          "n": 4,
+          "positive_rate": 0.0,
+          "predicted_positive_rate": 0.0,
+          "tn": 4,
+          "tp": 0
+        },
+        {
+          "error_count": 5,
+          "error_rate": 0.38461538461538464,
+          "fn": 5,
+          "fp": 0,
+          "group": "[0.2,0.4)",
+          "n": 13,
+          "positive_rate": 0.38461538461538464,
+          "predicted_positive_rate": 0.0,
+          "tn": 8,
+          "tp": 0
+        },
+        {
+          "error_count": 4,
+          "error_rate": 0.5,
+          "fn": 1,
+          "fp": 3,
+          "group": "[0.4,0.6)",
+          "n": 8,
+          "positive_rate": 0.25,
+          "predicted_positive_rate": 0.5,
+          "tn": 3,
+          "tp": 1
+        },
+        {
+          "error_count": 1,
+          "error_rate": 0.14285714285714285,
+          "fn": 0,
+          "fp": 1,
+          "group": "[0.6,0.8)",
+          "n": 7,
+          "positive_rate": 0.8571428571428571,
+          "predicted_positive_rate": 1.0,
+          "tn": 0,
+          "tp": 6
+        },
+        {
+          "error_count": 0,
+          "error_rate": 0.0,
+          "fn": 0,
+          "fp": 0,
+          "group": "[0.8,1.0]",
+          "n": 1,
+          "positive_rate": 1.0,
+          "predicted_positive_rate": 1.0,
+          "tn": 0,
+          "tp": 1
+        }
+      ],
+      "ses_missing": [
+        {
+          "error_count": 10,
+          "error_rate": 0.30303030303030304,
+          "fn": 6,
+          "fp": 4,
+          "group": "0",
+          "n": 33,
+          "positive_rate": 0.42424242424242425,
+          "predicted_positive_rate": 0.36363636363636365,
+          "tn": 15,
+          "tp": 8
+        }
+      ]
+    },
+    "model_name": "baseline_logistic_sklearn",
+    "note": "Descriptive subgroup patterns only; no causal interpretation.",
+    "overall": {
+      "error_count": 10,
+      "error_rate": 0.30303030303030304,
+      "fn": 6,
+      "fp": 4,
+      "n": 33,
+      "positive_rate": 0.42424242424242425,
+      "predicted_positive_rate": 0.36363636363636365,
+      "tn": 15,
+      "tp": 8
+    },
+    "split": "validation",
+    "threshold": 0.5
+  },
+  "interpretation": {
+    "top_logistic_abs_coef_predictors": [
+      "SES_missing_indicator",
+      "Gender",
+      "EDUC"
+    ],
+    "top_random_forest_predictors": [
+      "nWBV",
+      "Age",
+      "eTIV"
+    ],
+    "causal_guardrail": "All interpretations are associative only; causal claims are not valid from this design."
+  }
+}

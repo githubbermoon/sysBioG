@@ -1,0 +1,67 @@
+{
+  "candidate_predictors": [
+    "Age",
+    "Gender",
+    "EDUC",
+    "SES",
+    "eTIV",
+    "nWBV",
+    "ASF"
+  ],
+  "categorical_encoding": {
+    "Gender": {
+      "mapping": {
+        "F": 0,
+        "M": 1
+      },
+      "train_categories": [
+        "F",
+        "M"
+      ]
+    }
+  },
+  "categorical_predictors_raw": [
+    "Gender"
+  ],
+  "imputation": {
+    "SES": {
+      "strategy": "median",
+      "value": 2.0
+    }
+  },
+  "label_column": "cognitive_impairment",
+  "numeric_predictors_raw": [
+    "Age",
+    "EDUC",
+    "SES",
+    "eTIV",
+    "nWBV",
+    "ASF"
+  ],
+  "scaling": {
+    "ASF": {
+      "mean": 1.2042222222222223,
+      "std": 0.134319628435668
+    },
+    "Age": {
+      "mean": 75.61538461538461,
+      "std": 7.5468294739235535
+    },
+    "EDUC": {
+      "mean": 14.581196581196581,
+      "std": 2.795721139143094
+    },
+    "SES_imputed": {
+      "mean": 2.4188034188034186,
+      "std": 1.0231451112236183
+    },
+    "eTIV": {
+      "mean": 1476.051282051282,
+      "std": 169.07292950028796
+    },
+    "nWBV": {
+      "mean": 0.7363931623931624,
+      "std": 0.03644829079620994
+    }
+  }
+}

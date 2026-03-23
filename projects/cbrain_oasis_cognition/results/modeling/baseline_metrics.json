@@ -1,0 +1,48 @@
+{
+  "date": "2026-03-17",
+  "feature_order": [
+    "Age_z",
+    "Gender_code",
+    "EDUC_z",
+    "SES_imputed_z",
+    "SES_missing",
+    "eTIV_z",
+    "nWBV_z",
+    "ASF_z"
+  ],
+  "model_name": "baseline_logistic_sklearn",
+  "train_metrics": {
+    "accuracy": 0.7435897435897436,
+    "confusion_matrix": {
+      "fn": 20,
+      "fp": 10,
+      "tn": 56,
+      "tp": 31
+    },
+    "f1": 0.6739130434782609,
+    "pr_auc": 0.7994504325024406,
+    "precision": 0.7560975609756098,
+    "recall": 0.6078431372549019,
+    "roc_auc": 0.8003565062388592,
+    "specificity": 0.8484848484848485,
+    "threshold": 0.5
+  },
+  "train_row_count": 117,
+  "validation_metrics": {
+    "accuracy": 0.696969696969697,
+    "confusion_matrix": {
+      "fn": 6,
+      "fp": 4,
+      "tn": 15,
+      "tp": 8
+    },
+    "f1": 0.6153846153846154,
+    "pr_auc": 0.7983120542903152,
+    "precision": 0.6666666666666666,
+    "recall": 0.5714285714285714,
+    "roc_auc": 0.7781954887218046,
+    "specificity": 0.7894736842105263,
+    "threshold": 0.5
+  },
+  "validation_row_count": 33
+}

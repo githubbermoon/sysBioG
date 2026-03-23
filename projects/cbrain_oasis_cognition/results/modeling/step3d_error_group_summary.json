@@ -1,0 +1,166 @@
+{
+  "date": "2026-03-18",
+  "error_type_counts": {
+    "FN": 6,
+    "FP": 4,
+    "TN": 15,
+    "TP": 8
+  },
+  "group_summaries": {
+    "age_bin": [
+      {
+        "error_count": 1,
+        "error_rate": 0.1111111111111111,
+        "fn": 1,
+        "fp": 0,
+        "group": "<70",
+        "n": 9,
+        "positive_rate": 0.4444444444444444,
+        "predicted_positive_rate": 0.3333333333333333,
+        "tn": 5,
+        "tp": 3
+      },
+      {
+        "error_count": 7,
+        "error_rate": 0.4375,
+        "fn": 4,
+        "fp": 3,
+        "group": "70-79",
+        "n": 16,
+        "positive_rate": 0.5,
+        "predicted_positive_rate": 0.4375,
+        "tn": 5,
+        "tp": 4
+      },
+      {
+        "error_count": 2,
+        "error_rate": 0.25,
+        "fn": 1,
+        "fp": 1,
+        "group": "80+",
+        "n": 8,
+        "positive_rate": 0.25,
+        "predicted_positive_rate": 0.25,
+        "tn": 5,
+        "tp": 1
+      }
+    ],
+    "gender": [
+      {
+        "error_count": 4,
+        "error_rate": 0.2222222222222222,
+        "fn": 2,
+        "fp": 2,
+        "group": "F",
+        "n": 18,
+        "positive_rate": 0.2777777777777778,
+        "predicted_positive_rate": 0.2777777777777778,
+        "tn": 11,
+        "tp": 3
+      },
+      {
+        "error_count": 6,
+        "error_rate": 0.4,
+        "fn": 4,
+        "fp": 2,
+        "group": "M",
+        "n": 15,
+        "positive_rate": 0.6,
+        "predicted_positive_rate": 0.4666666666666667,
+        "tn": 4,
+        "tp": 5
+      }
+    ],
+    "probability_band": [
+      {
+        "error_count": 0,
+        "error_rate": 0.0,
+        "fn": 0,
+        "fp": 0,
+        "group": "[0.0,0.2)",
+        "n": 4,
+        "positive_rate": 0.0,
+        "predicted_positive_rate": 0.0,
+        "tn": 4,
+        "tp": 0
+      },
+      {
+        "error_count": 5,
+        "error_rate": 0.38461538461538464,
+        "fn": 5,
+        "fp": 0,
+        "group": "[0.2,0.4)",
+        "n": 13,
+        "positive_rate": 0.38461538461538464,
+        "predicted_positive_rate": 0.0,
+        "tn": 8,
+        "tp": 0
+      },
+      {
+        "error_count": 4,
+        "error_rate": 0.5,
+        "fn": 1,
+        "fp": 3,
+        "group": "[0.4,0.6)",
+        "n": 8,
+        "positive_rate": 0.25,
+        "predicted_positive_rate": 0.5,
+        "tn": 3,
+        "tp": 1
+      },
+      {
+        "error_count": 1,
+        "error_rate": 0.14285714285714285,
+        "fn": 0,
+        "fp": 1,
+        "group": "[0.6,0.8)",
+        "n": 7,
+        "positive_rate": 0.8571428571428571,
+        "predicted_positive_rate": 1.0,
+        "tn": 0,
+        "tp": 6
+      },
+      {
+        "error_count": 0,
+        "error_rate": 0.0,
+        "fn": 0,
+        "fp": 0,
+        "group": "[0.8,1.0]",
+        "n": 1,
+        "positive_rate": 1.0,
+        "predicted_positive_rate": 1.0,
+        "tn": 0,
+        "tp": 1
+      }
+    ],
+    "ses_missing": [
+      {
+        "error_count": 10,
+        "error_rate": 0.30303030303030304,
+        "fn": 6,
+        "fp": 4,
+        "group": "0",
+        "n": 33,
+        "positive_rate": 0.42424242424242425,
+        "predicted_positive_rate": 0.36363636363636365,
+        "tn": 15,
+        "tp": 8
+      }
+    ]
+  },
+  "model_name": "baseline_logistic_sklearn",
+  "note": "Descriptive subgroup patterns only; no causal interpretation.",
+  "overall": {
+    "error_count": 10,
+    "error_rate": 0.30303030303030304,
+    "fn": 6,
+    "fp": 4,
+    "n": 33,
+    "positive_rate": 0.42424242424242425,
+    "predicted_positive_rate": 0.36363636363636365,
+    "tn": 15,
+    "tp": 8
+  },
+  "split": "validation",
+  "threshold": 0.5
+}

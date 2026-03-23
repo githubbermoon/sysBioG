@@ -17,3 +17,6 @@ env/
 
 # macOS
 .DS_Store
+
+# Local notes/workspace artifacts
+obsidian_notes/

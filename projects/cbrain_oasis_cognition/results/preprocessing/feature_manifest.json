@@ -1,0 +1,46 @@
+{
+  "final_feature_order": [
+    "Age_z",
+    "Gender_code",
+    "EDUC_z",
+    "SES_imputed_z",
+    "SES_missing",
+    "eTIV_z",
+    "nWBV_z",
+    "ASF_z"
+  ],
+  "fit_on_train_only": true,
+  "label_column": "cognitive_impairment",
+  "locked_exclusions": [
+    "CDR",
+    "Group",
+    "MMSE",
+    "Subject.ID",
+    "MRI.ID",
+    "rownames",
+    "Hand",
+    "Visit",
+    "MR.Delay"
+  ],
+  "raw_candidate_predictors": [
+    "Age",
+    "Gender",
+    "EDUC",
+    "SES",
+    "eTIV",
+    "nWBV",
+    "ASF"
+  ],
+  "raw_categorical_predictors": [
+    "Gender"
+  ],
+  "raw_numeric_predictors": [
+    "Age",
+    "EDUC",
+    "SES",
+    "eTIV",
+    "nWBV",
+    "ASF"
+  ],
+  "row_alignment_rule": "Rows follow sorted subject ids from split_subjects.json; y files align row-wise with X files."
+}

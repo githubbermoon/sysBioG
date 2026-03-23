@@ -1,0 +1,56 @@
+{
+  "date": "2026-03-17",
+  "feature_order": [
+    "Age_z",
+    "Gender_code",
+    "EDUC_z",
+    "SES_imputed_z",
+    "SES_missing",
+    "eTIV_z",
+    "nWBV_z",
+    "ASF_z"
+  ],
+  "hyperparameters": {
+    "class_weight": "balanced",
+    "max_depth": null,
+    "min_samples_leaf": 2,
+    "n_estimators": 500,
+    "n_jobs": 1,
+    "random_state": 42
+  },
+  "model_name": "random_forest_sklearn",
+  "train_metrics": {
+    "accuracy": 0.9658119658119658,
+    "confusion_matrix": {
+      "fn": 3,
+      "fp": 1,
+      "tn": 65,
+      "tp": 48
+    },
+    "f1": 0.96,
+    "pr_auc": 0.9964819485986097,
+    "precision": 0.9795918367346939,
+    "recall": 0.9411764705882353,
+    "roc_auc": 0.9973262032085561,
+    "specificity": 0.9848484848484849,
+    "threshold": 0.5
+  },
+  "train_row_count": 117,
+  "validation_metrics": {
+    "accuracy": 0.696969696969697,
+    "confusion_matrix": {
+      "fn": 5,
+      "fp": 5,
+      "tn": 14,
+      "tp": 9
+    },
+    "f1": 0.6428571428571429,
+    "pr_auc": 0.6584935149784774,
+    "precision": 0.6428571428571429,
+    "recall": 0.6428571428571429,
+    "roc_auc": 0.736842105263158,
+    "specificity": 0.7368421052631579,
+    "threshold": 0.5
+  },
+  "validation_row_count": 33
+}
